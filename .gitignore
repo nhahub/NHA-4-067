@@ -1,0 +1,10 @@
+*.keras
+*.h5
+
+
+.venv/
+venv/
+env/
+
+__pycache__/
+*.pyc

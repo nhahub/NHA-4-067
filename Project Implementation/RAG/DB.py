@@ -26,7 +26,7 @@ def get_context(query,llm):
 
     hybrid_retriever = EnsembleRetriever(
     retrievers=[bm25, retriever],
-    weights=[0.4, 0.6]
+    weights=[0.1, 0.9]
     )
     final_query = improve_user_query(query,llm)
     context = hybrid_retriever.invoke(final_query)
